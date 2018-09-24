@@ -14,6 +14,9 @@
 		171715512159A491006AE158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1717154F2159A491006AE158 /* LaunchScreen.storyboard */; };
 		1717155C2159A492006AE158 /* Alien_ShootersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717155B2159A492006AE158 /* Alien_ShootersTests.swift */; };
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
+		346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */; };
+		9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */; };
+		BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
 		171715432159A48F006AE158 /* Alien Shooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alien Shooters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715462159A48F006AE158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		171715482159A48F006AE158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		171715622159A492006AE158 /* Alien ShootersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715662159A492006AE158 /* Alien_ShootersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersUITests.swift; sourceTree = "<group>"; };
 		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
+		9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				1717155A2159A492006AE158 /* Alien ShootersTests */,
 				171715652159A492006AE158 /* Alien ShootersUITests */,
 				171715442159A48F006AE158 /* Products */,
+				41B557334CC80D4B7E6FC426 /* Pods */,
+				E8A4C2F9959887F333D5FAAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "Alien ShootersUITests";
 			sourceTree = "<group>";
 		};
+		41B557334CC80D4B7E6FC426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */,
+				EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */,
+				C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */,
+				514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */,
+				BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */,
+				9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8A4C2F9959887F333D5FAAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */,
+				DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */,
+				B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */;
 			buildPhases = (
+				7C2ECF0317B9FF3D17B20C0C /* [CP] Check Pods Manifest.lock */,
 				1717153F2159A48F006AE158 /* Sources */,
 				171715402159A48F006AE158 /* Frameworks */,
 				171715412159A48F006AE158 /* Resources */,
+				BD0FE06B780369261E05D0A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */;
 			buildPhases = (
+				A5334AE69B2AB5CD63414777 /* [CP] Check Pods Manifest.lock */,
 				171715532159A492006AE158 /* Sources */,
 				171715542159A492006AE158 /* Frameworks */,
 				171715552159A492006AE158 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */;
 			buildPhases = (
+				0D2E636D5857C737F02741B7 /* [CP] Check Pods Manifest.lock */,
 				1717155E2159A492006AE158 /* Sources */,
 				1717155F2159A492006AE158 /* Frameworks */,
 				171715602159A492006AE158 /* Resources */,
@@ -250,6 +294,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2E636D5857C737F02741B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alien ShootersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C2ECF0317B9FF3D17B20C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alien Shooters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5334AE69B2AB5CD63414777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alien ShootersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0FE06B780369261E05D0A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Each/Each.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Each.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1717153F2159A48F006AE158 /* Sources */ = {
@@ -430,15 +549,13 @@
 		};
 		1717156C2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,15 +565,13 @@
 		};
 		1717156D2159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -466,17 +581,14 @@
 		};
 		1717156F2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -487,17 +599,14 @@
 		};
 		171715702159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -508,16 +617,13 @@
 		};
 		171715722159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -528,16 +634,13 @@
 		};
 		171715732159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
