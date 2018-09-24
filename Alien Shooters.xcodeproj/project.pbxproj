@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171715472159A48F006AE158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715462159A48F006AE158 /* AppDelegate.swift */; };
+		171715492159A48F006AE158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715482159A48F006AE158 /* ViewController.swift */; };
+		1717154C2159A48F006AE158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1717154A2159A48F006AE158 /* Main.storyboard */; };
+		1717154E2159A491006AE158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1717154D2159A491006AE158 /* Assets.xcassets */; };
+		171715512159A491006AE158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1717154F2159A491006AE158 /* LaunchScreen.storyboard */; };
+		1717155C2159A492006AE158 /* Alien_ShootersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717155B2159A492006AE158 /* Alien_ShootersTests.swift */; };
+		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		171715582159A492006AE158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1717153B2159A48F006AE158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171715422159A48F006AE158;
+			remoteInfo = "Alien Shooters";
+		};
+		171715632159A492006AE158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1717153B2159A48F006AE158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171715422159A48F006AE158;
+			remoteInfo = "Alien Shooters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		171715432159A48F006AE158 /* Alien Shooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alien Shooters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171715462159A48F006AE158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171715482159A48F006AE158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1717154B2159A48F006AE158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1717154D2159A491006AE158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171715502159A491006AE158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171715522159A491006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171715572159A492006AE158 /* Alien ShootersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1717155B2159A492006AE158 /* Alien_ShootersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersTests.swift; sourceTree = "<group>"; };
+		1717155D2159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171715622159A492006AE158 /* Alien ShootersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171715662159A492006AE158 /* Alien_ShootersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersUITests.swift; sourceTree = "<group>"; };
+		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171715402159A48F006AE158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171715542159A492006AE158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1717155F2159A492006AE158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1717153A2159A48F006AE158 = {
+			isa = PBXGroup;
+			children = (
+				171715452159A48F006AE158 /* Alien Shooters */,
+				1717155A2159A492006AE158 /* Alien ShootersTests */,
+				171715652159A492006AE158 /* Alien ShootersUITests */,
+				171715442159A48F006AE158 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		171715442159A48F006AE158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171715432159A48F006AE158 /* Alien Shooters.app */,
+				171715572159A492006AE158 /* Alien ShootersTests.xctest */,
+				171715622159A492006AE158 /* Alien ShootersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171715452159A48F006AE158 /* Alien Shooters */ = {
+			isa = PBXGroup;
+			children = (
+				171715462159A48F006AE158 /* AppDelegate.swift */,
+				171715482159A48F006AE158 /* ViewController.swift */,
+				1717154A2159A48F006AE158 /* Main.storyboard */,
+				1717154D2159A491006AE158 /* Assets.xcassets */,
+				1717154F2159A491006AE158 /* LaunchScreen.storyboard */,
+				171715522159A491006AE158 /* Info.plist */,
+			);
+			path = "Alien Shooters";
+			sourceTree = "<group>";
+		};
+		1717155A2159A492006AE158 /* Alien ShootersTests */ = {
+			isa = PBXGroup;
+			children = (
+				1717155B2159A492006AE158 /* Alien_ShootersTests.swift */,
+				1717155D2159A492006AE158 /* Info.plist */,
+			);
+			path = "Alien ShootersTests";
+			sourceTree = "<group>";
+		};
+		171715652159A492006AE158 /* Alien ShootersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				171715662159A492006AE158 /* Alien_ShootersUITests.swift */,
+				171715682159A492006AE158 /* Info.plist */,
+			);
+			path = "Alien ShootersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171715422159A48F006AE158 /* Alien Shooters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */;
+			buildPhases = (
+				1717153F2159A48F006AE158 /* Sources */,
+				171715402159A48F006AE158 /* Frameworks */,
+				171715412159A48F006AE158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alien Shooters";
+			productName = "Alien Shooters";
+			productReference = 171715432159A48F006AE158 /* Alien Shooters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		171715562159A492006AE158 /* Alien ShootersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */;
+			buildPhases = (
+				171715532159A492006AE158 /* Sources */,
+				171715542159A492006AE158 /* Frameworks */,
+				171715552159A492006AE158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171715592159A492006AE158 /* PBXTargetDependency */,
+			);
+			name = "Alien ShootersTests";
+			productName = "Alien ShootersTests";
+			productReference = 171715572159A492006AE158 /* Alien ShootersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		171715612159A492006AE158 /* Alien ShootersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */;
+			buildPhases = (
+				1717155E2159A492006AE158 /* Sources */,
+				1717155F2159A492006AE158 /* Frameworks */,
+				171715602159A492006AE158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171715642159A492006AE158 /* PBXTargetDependency */,
+			);
+			name = "Alien ShootersUITests";
+			productName = "Alien ShootersUITests";
+			productReference = 171715622159A492006AE158 /* Alien ShootersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1717153B2159A48F006AE158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Carlo Namoca";
+				TargetAttributes = {
+					171715422159A48F006AE158 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					171715562159A492006AE158 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 171715422159A48F006AE158;
+					};
+					171715612159A492006AE158 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 171715422159A48F006AE158;
+					};
+				};
+			};
+			buildConfigurationList = 1717153E2159A48F006AE158 /* Build configuration list for PBXProject "Alien Shooters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1717153A2159A48F006AE158;
+			productRefGroup = 171715442159A48F006AE158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171715422159A48F006AE158 /* Alien Shooters */,
+				171715562159A492006AE158 /* Alien ShootersTests */,
+				171715612159A492006AE158 /* Alien ShootersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171715412159A48F006AE158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171715512159A491006AE158 /* LaunchScreen.storyboard in Resources */,
+				1717154E2159A491006AE158 /* Assets.xcassets in Resources */,
+				1717154C2159A48F006AE158 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171715552159A492006AE158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171715602159A492006AE158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1717153F2159A48F006AE158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171715492159A48F006AE158 /* ViewController.swift in Sources */,
+				171715472159A48F006AE158 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171715532159A492006AE158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1717155C2159A492006AE158 /* Alien_ShootersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1717155E2159A492006AE158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		171715592159A492006AE158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171715422159A48F006AE158 /* Alien Shooters */;
+			targetProxy = 171715582159A492006AE158 /* PBXContainerItemProxy */;
+		};
+		171715642159A492006AE158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171715422159A48F006AE158 /* Alien Shooters */;
+			targetProxy = 171715632159A492006AE158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1717154A2159A48F006AE158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1717154B2159A48F006AE158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1717154F2159A491006AE158 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171715502159A491006AE158 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		171715692159A492006AE158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1717156A2159A492006AE158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1717156C2159A492006AE158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien Shooters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1717156D2159A492006AE158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien Shooters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1717156F2159A492006AE158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alien Shooters.app/Alien Shooters";
+			};
+			name = Debug;
+		};
+		171715702159A492006AE158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alien Shooters.app/Alien Shooters";
+			};
+			name = Release;
+		};
+		171715722159A492006AE158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Alien Shooters";
+			};
+			name = Debug;
+		};
+		171715732159A492006AE158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FBYQCX339P;
+				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Alien Shooters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1717153E2159A48F006AE158 /* Build configuration list for PBXProject "Alien Shooters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171715692159A492006AE158 /* Debug */,
+				1717156A2159A492006AE158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1717156C2159A492006AE158 /* Debug */,
+				1717156D2159A492006AE158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1717156F2159A492006AE158 /* Debug */,
+				171715702159A492006AE158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171715722159A492006AE158 /* Debug */,
+				171715732159A492006AE158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1717153B2159A48F006AE158 /* Project object */;
+}
