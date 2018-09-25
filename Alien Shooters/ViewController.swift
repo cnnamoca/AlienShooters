@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+        timerLabel.isHidden = true
     }
     
     //TODO: - Make this prettier
@@ -49,7 +51,7 @@ class ViewController: UIViewController {
                     SCNTransaction.completionBlock = {
                         node.removeFromParentNode()
                         self.addEnemy()
-//                        self.restoreTimer()
+                        self.restoreTimer()
                     }
                     SCNTransaction.commit()
                 }
@@ -59,6 +61,7 @@ class ViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func play(_ sender: Any) {
+        timerLabel.isHidden = false
         setTimer()
         addEnemy()
         playButton.isEnabled = false
@@ -100,6 +103,8 @@ class ViewController: UIViewController {
         node.addAnimation(spin, forKey: "position")
     }
     
+    //TODO: - Make enemies go closer to user/camera position
+    
     func setTimer() {
         self.timer.perform { () -> NextStep in
             self.countdown -= 1
@@ -123,11 +128,6 @@ class ViewController: UIViewController {
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
-    
-    
-    
-    
-
 
 }
 
