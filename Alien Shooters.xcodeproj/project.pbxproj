@@ -14,6 +14,7 @@
 		171715512159A491006AE158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1717154F2159A491006AE158 /* LaunchScreen.storyboard */; };
 		1717155C2159A492006AE158 /* Alien_ShootersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717155B2159A492006AE158 /* Alien_ShootersTests.swift */; };
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
+		17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B7B46B215AC3C6002D4ACF /* art.scnassets */; };
 		346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */; };
 		9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */; };
 		BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */; };
@@ -51,6 +52,7 @@
 		171715622159A492006AE158 /* Alien ShootersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715662159A492006AE158 /* Alien_ShootersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersUITests.swift; sourceTree = "<group>"; };
 		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B7B46B215AC3C6002D4ACF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = SOURCE_ROOT; };
 		430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
 		9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,12 +116,13 @@
 		171715452159A48F006AE158 /* Alien Shooters */ = {
 			isa = PBXGroup;
 			children = (
+				171715522159A491006AE158 /* Info.plist */,
 				171715462159A48F006AE158 /* AppDelegate.swift */,
 				171715482159A48F006AE158 /* ViewController.swift */,
-				1717154A2159A48F006AE158 /* Main.storyboard */,
 				1717154D2159A491006AE158 /* Assets.xcassets */,
 				1717154F2159A491006AE158 /* LaunchScreen.storyboard */,
-				171715522159A491006AE158 /* Info.plist */,
+				1717154A2159A48F006AE158 /* Main.storyboard */,
+				17B7B46B215AC3C6002D4ACF /* art.scnassets */,
 			);
 			path = "Alien Shooters";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				171715512159A491006AE158 /* LaunchScreen.storyboard in Resources */,
+				17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */,
 				1717154E2159A491006AE158 /* Assets.xcassets in Resources */,
 				1717154C2159A48F006AE158 /* Main.storyboard in Resources */,
 			);
@@ -555,7 +559,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -571,7 +578,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -588,7 +598,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -606,7 +620,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -623,7 +641,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -640,7 +662,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien ShootersUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-ShootersUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
