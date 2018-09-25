@@ -20,12 +20,33 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-NC-lPS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-2h-Gwp">
+                                <rect key="frame" x="306" y="594" width="53" height="53"/>
+                                <state key="normal" image="restartButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulh-c9-CrH">
+                                <rect key="frame" x="306" y="533" width="53" height="53"/>
+                                <state key="normal" image="playButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfw-yE-QME">
+                                <rect key="frame" x="309" y="504" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rfw-yE-QME" secondAttribute="trailing" constant="22" id="5bY-Lg-l8F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x7i-2h-Gwp" secondAttribute="bottom" constant="20" id="Bzx-t7-y32"/>
+                            <constraint firstItem="Ulh-c9-CrH" firstAttribute="top" secondItem="rfw-yE-QME" secondAttribute="bottom" constant="8" id="CX4-lb-VAP"/>
+                            <constraint firstItem="rfw-yE-QME" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="484" id="IZB-3M-HJI"/>
                             <constraint firstItem="UoQ-NC-lPS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UVW-Bu-CxR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7i-2h-Gwp" secondAttribute="trailing" constant="16" id="VQo-Rh-SEW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UoQ-NC-lPS" secondAttribute="bottom" id="WUv-OZ-zmo"/>
+                            <constraint firstItem="x7i-2h-Gwp" firstAttribute="top" secondItem="Ulh-c9-CrH" secondAttribute="bottom" constant="8" id="ZuG-Nh-04k"/>
                             <constraint firstItem="UoQ-NC-lPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b5K-Pp-RqV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ulh-c9-CrH" secondAttribute="trailing" constant="16" id="ov9-gh-Gux"/>
                             <constraint firstAttribute="trailing" secondItem="UoQ-NC-lPS" secondAttribute="trailing" id="v7t-vS-uxR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,7 +54,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="playButton" destination="Ulh-c9-CrH" id="xdX-gB-cTD"/>
+                        <outlet property="restartButton" destination="x7i-2h-Gwp" id="a5r-ID-1qn"/>
                         <outlet property="sceneView" destination="UoQ-NC-lPS" id="LJJ-8t-8Za"/>
+                        <outlet property="timerLabel" destination="rfw-yE-QME" id="rKc-oW-bso"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,4 +65,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="playButton" width="53" height="53"/>
+        <image name="restartButton" width="53" height="53"/>
+    </resources>
 </document>
