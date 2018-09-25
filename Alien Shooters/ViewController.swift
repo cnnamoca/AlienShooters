@@ -57,11 +57,25 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    //MARK: - IBActions
     @IBAction func play(_ sender: Any) {
+        setTimer()
+        addEnemy()
+        playButton.isEnabled = false
+        
+        //TODO: - Move buttons to the side when this button is pressed
     }
     
     @IBAction func restart(_ sender: Any) {
+        timer.stop()
+        restoreTimer()
+        playButton.isEnabled = true
+        
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            node.removeFromParentNode()
+        }
+        
+        //TODO: - Move buttons back in the screen when this button is pressed
     }
     
     
@@ -106,7 +120,6 @@ class ViewController: UIViewController {
     }
     
     // Gives you a random decimal in between firstNum and secondNum
-    // TODO: - Figure out new Swift random function
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
