@@ -57,6 +57,14 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func play(_ sender: Any) {
+    }
+    
+    @IBAction func restart(_ sender: Any) {
+    }
+    
+    
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
