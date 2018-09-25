@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         sceneView.session.run(configuration)
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
     }
+    
+    // Gives you a random decimal in between firstNum and secondNum
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
 
 
 }
