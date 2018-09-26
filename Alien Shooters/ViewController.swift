@@ -87,7 +87,6 @@ class ViewController: UIViewController {
             node.removeFromParentNode()
         }
         
-        //TODO: - Move buttons back in the screen when this button is pressed
     }
     
     
@@ -128,6 +127,13 @@ class ViewController: UIViewController {
             
             if self.countdown == 0 {
                 self.timerLabel.text = "You Lose!"
+                //TODO: - Move buttons back in
+                // Check if this works
+                self.playButtonTrailingConstraint.constant += self.playButton.frame.size.width * 2
+                self.restartButtonTrailingConstraint.constant += self.restartButton.frame.size.width * 2
+                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+                    self.view.layoutIfNeeded()
+                }, completion: nil)
                 return .stop
             }
             
@@ -139,9 +145,7 @@ class ViewController: UIViewController {
         countdown = 10
         self.timerLabel.text = String(countdown)
     }
-    
-    
-    
+
     // Gives you a random decimal in between firstNum and secondNum
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
