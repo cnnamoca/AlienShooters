@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var playButtonTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var restartButtonTrailingConstraint: NSLayoutConstraint!
+    
+    
     let configuration = ARWorldTrackingConfiguration()
     
     var timer = Each(1).seconds
@@ -67,8 +71,11 @@ class ViewController: UIViewController {
         playButton.isEnabled = false
         
         //TODO: - Move buttons to the side when this button is pressed
-        playButton.animateOut()
-        restartButton.animateOut()
+        playButtonTrailingConstraint.constant -= playButton.frame.size.width * 2
+        restartButtonTrailingConstraint.constant -= restartButton.frame.size.width * 2
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
     @IBAction func restart(_ sender: Any) {
@@ -140,13 +147,5 @@ class ViewController: UIViewController {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
 
-}
-
-extension UIButton {
-    func animateOut() {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
-            self.frame.origin.x += self.frame.size.width * 2
-        }, completion: nil)
-    }
 }
 

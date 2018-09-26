@@ -60,7 +60,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="playButton" destination="Ulh-c9-CrH" id="xdX-gB-cTD"/>
+                        <outlet property="playButtonTrailingConstraint" destination="ov9-gh-Gux" id="SF4-8u-MSg"/>
                         <outlet property="restartButton" destination="x7i-2h-Gwp" id="a5r-ID-1qn"/>
+                        <outlet property="restartButtonTrailingConstraint" destination="VQo-Rh-SEW" id="X9m-DO-WH5"/>
                         <outlet property="sceneView" destination="UoQ-NC-lPS" id="LJJ-8t-8Za"/>
                         <outlet property="timerLabel" destination="rfw-yE-QME" id="rKc-oW-bso"/>
                     </connections>
