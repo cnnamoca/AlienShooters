@@ -15,6 +15,7 @@
 		1717155C2159A492006AE158 /* Alien_ShootersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717155B2159A492006AE158 /* Alien_ShootersTests.swift */; };
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
 		17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B7B46B215AC3C6002D4ACF /* art.scnassets */; };
+		17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */; };
 		346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */; };
 		9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */; };
 		BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */; };
@@ -53,6 +54,7 @@
 		171715662159A492006AE158 /* Alien_ShootersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersUITests.swift; sourceTree = "<group>"; };
 		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17B7B46B215AC3C6002D4ACF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = SOURCE_ROOT; };
+		17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
 		9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				171715522159A491006AE158 /* Info.plist */,
 				171715462159A48F006AE158 /* AppDelegate.swift */,
 				171715482159A48F006AE158 /* ViewController.swift */,
+				17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */,
 				1717154D2159A491006AE158 /* Assets.xcassets */,
 				1717154F2159A491006AE158 /* LaunchScreen.storyboard */,
 				1717154A2159A48F006AE158 /* Main.storyboard */,
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */,
 				171715492159A48F006AE158 /* ViewController.swift in Sources */,
 				171715472159A48F006AE158 /* AppDelegate.swift in Sources */,
 			);

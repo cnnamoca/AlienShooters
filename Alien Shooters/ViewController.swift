@@ -67,6 +67,8 @@ class ViewController: UIViewController {
         playButton.isEnabled = false
         
         //TODO: - Move buttons to the side when this button is pressed
+        playButton.animateOut()
+        restartButton.animateOut()
     }
     
     @IBAction func restart(_ sender: Any) {
@@ -88,7 +90,14 @@ class ViewController: UIViewController {
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
                                          randomNumbers(firstNum: -1, secondNum: 1))
-        self.sceneView.scene.rootNode.addChildNode(alienNode!)
+
+        sceneView.scene.rootNode.addChildNode(alienNode!)
+        
+        // TODO: - Make sure enemies are looking at player at all times
+        let billboardConstraint = SCNBillboardConstraint()
+        billboardConstraint.freeAxes = SCNBillboardAxis.Y
+        alienNode!.constraints = [billboardConstraint]
+        
     }
     
     func animateNode(node: SCNNode) {
@@ -106,7 +115,7 @@ class ViewController: UIViewController {
     //TODO: - Make enemies go closer to user/camera position
     
     func setTimer() {
-        self.timer.perform { () -> NextStep in
+        timer.perform { () -> NextStep in
             self.countdown -= 1
             self.timerLabel.text = String(self.countdown)
             
@@ -124,10 +133,20 @@ class ViewController: UIViewController {
         self.timerLabel.text = String(countdown)
     }
     
+    
+    
     // Gives you a random decimal in between firstNum and secondNum
     func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
 
+}
+
+extension UIButton {
+    func animateOut() {
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+            self.frame.origin.x += self.frame.size.width * 2
+        }, completion: nil)
+    }
 }
 
