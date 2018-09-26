@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButtonTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var restartButtonTrailingConstraint: NSLayoutConstraint!
     
-    
     let configuration = ARWorldTrackingConfiguration()
     
     var timer = Each(1).seconds
@@ -38,13 +37,14 @@ class ViewController: UIViewController {
         timerLabel.isHidden = true
     }
     
-    //TODO: - Make this prettier
+    
     @objc
     func handleTap(sender: UITapGestureRecognizer) {
         let sceneViewTappedOn = sender.view as! SCNView
         let touchCoordinates = sender.location(in: sceneViewTappedOn)
         let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
         
+        //TODO: - Make this prettier
         if !hitTest.isEmpty {
             if countdown > 0 {
                 let results = hitTest.first!
@@ -89,7 +89,6 @@ class ViewController: UIViewController {
         
     }
     
-    
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
@@ -127,8 +126,7 @@ class ViewController: UIViewController {
             
             if self.countdown == 0 {
                 self.timerLabel.text = "You Lose!"
-                //TODO: - Move buttons back in
-                // Check if this works
+                //TODO: - Check if this works
                 self.playButtonTrailingConstraint.constant += self.playButton.frame.size.width * 2
                 self.restartButtonTrailingConstraint.constant += self.restartButton.frame.size.width * 2
                 UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
