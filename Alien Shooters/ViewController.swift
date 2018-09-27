@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         setTimer()
         addEnemy()
         
-        //TODO: - Move buttons to the side when this button is pressed
+        // Move buttons to the side when this button is pressed
         playButtonTrailingConstraint.constant -= playButton.frame.size.width * 2
         restartButtonTrailingConstraint.constant -= restartButton.frame.size.width * 2
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
@@ -89,6 +89,7 @@ class ViewController: UIViewController {
         
     }
     
+    //TODO: - Make enemies come towards user
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)

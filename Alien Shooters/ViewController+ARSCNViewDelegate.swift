@@ -10,5 +10,6 @@ import Foundation
 import ARKit
 
 extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
-    //TODO: - Handle errors when user switches apps
+    //TODO: - Handle errors when user switches apps + Make sure origin
+    //always gets updated as user moves
 }
