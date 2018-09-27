@@ -65,10 +65,10 @@ class ViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func play(_ sender: Any) {
+        playButton.isEnabled = false
         timerLabel.isHidden = false
         setTimer()
         addEnemy()
-        playButton.isEnabled = false
         
         //TODO: - Move buttons to the side when this button is pressed
         playButtonTrailingConstraint.constant -= playButton.frame.size.width * 2
@@ -101,8 +101,10 @@ class ViewController: UIViewController {
         // TODO: - Make sure enemies are looking at player at all times
         let billboardConstraint = SCNBillboardConstraint()
         billboardConstraint.freeAxes = SCNBillboardAxis.Y
+        billboardConstraint.freeAxes = SCNBillboardAxis.X
         alienNode!.constraints = [billboardConstraint]
         
+        alienNode?.eulerAngles.x = 170
     }
     
     func animateNode(node: SCNNode) {
@@ -126,6 +128,7 @@ class ViewController: UIViewController {
             
             if self.countdown == 0 {
                 self.timerLabel.text = "You Lose!"
+                self.playButton.isEnabled = true
                 //TODO: - Check if this works
                 self.playButtonTrailingConstraint.constant += self.playButton.frame.size.width * 2
                 self.restartButtonTrailingConstraint.constant += self.restartButton.frame.size.width * 2
