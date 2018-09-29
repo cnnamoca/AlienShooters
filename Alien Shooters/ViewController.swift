@@ -108,8 +108,6 @@ class ViewController: UIViewController {
 //        billboardConstraint.freeAxes = SCNBillboardAxis.X
         alienNode!.constraints = [billboardConstraint]
         
-        alienNode?.eulerAngles.x = 170
-        
         //TODO: - Make enemies come towards user
         
     }
