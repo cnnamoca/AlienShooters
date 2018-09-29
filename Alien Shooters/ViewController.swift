@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
         
         //TODO: - Make sure only alien nodes are touched
-        if !hitTest.isEmpty && hitTest.first?.node == enemyNode {
+        if hitTest.first?.node == enemyNode {
             if countdown > 0 {
                 let results = hitTest.first!
                 let node = results.node
