@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        sceneView.delegate = self
         sceneView.session.run(configuration)
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
         let touchCoordinates = sender.location(in: sceneViewTappedOn)
         let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
         
-        //TODO: - Make this prettier
+        //TODO: - Make sure only alien nodes are touched
         if !hitTest.isEmpty {
             if countdown > 0 {
                 let results = hitTest.first!
@@ -95,17 +96,17 @@ class ViewController: UIViewController {
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
-                                         randomNumbers(firstNum: -1, secondNum: 1))
+                                         1.5)
 
         sceneView.scene.rootNode.addChildNode(alienNode!)
         
         // TODO: - Make sure enemies are looking at player at all times
         let billboardConstraint = SCNBillboardConstraint()
         billboardConstraint.freeAxes = SCNBillboardAxis.Y
-        billboardConstraint.freeAxes = SCNBillboardAxis.X
+//        billboardConstraint.freeAxes = SCNBillboardAxis.X
         alienNode!.constraints = [billboardConstraint]
         
-        alienNode?.eulerAngles.x = 170
+        alienNode?.eulerAngles.y = 360
         
         //TODO: - Make enemies come towards user
         

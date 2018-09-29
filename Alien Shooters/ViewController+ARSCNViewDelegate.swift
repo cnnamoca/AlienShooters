@@ -23,7 +23,6 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
         let location = SCNVector3(transform.m41,transform.m42,transform.m43)
         let currentPositionOfCamera = orientation + location
         
-        self.currentPosition = currentPositionOfCamera
-        
+        currentPosition = currentPositionOfCamera        
     }
 }
