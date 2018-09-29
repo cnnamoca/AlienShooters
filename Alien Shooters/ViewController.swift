@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
         
         //TODO: - Make sure only alien nodes are touched
-        if !hitTest.isEmpty {
+        if !hitTest.isEmpty && hitTest.first?.node == enemyNode {
             if countdown > 0 {
                 let results = hitTest.first!
                 let node = results.node
@@ -91,9 +91,11 @@ class ViewController: UIViewController {
         
     }
     
+    var enemyNode = SCNNode()
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
+        enemyNode = alienNode!
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
                                          1.5)
@@ -106,7 +108,7 @@ class ViewController: UIViewController {
 //        billboardConstraint.freeAxes = SCNBillboardAxis.X
         alienNode!.constraints = [billboardConstraint]
         
-        alienNode?.eulerAngles.y = 360
+        alienNode?.eulerAngles.x = 170
         
         //TODO: - Make enemies come towards user
         
