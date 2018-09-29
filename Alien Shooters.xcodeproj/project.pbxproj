@@ -16,9 +16,9 @@
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
 		17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B7B46B215AC3C6002D4ACF /* art.scnassets */; };
 		17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */; };
-		346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */; };
-		9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */; };
-		BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */; };
+		4B5A2815C88DACABF12782F1 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */; };
+		B04C2004CFADD14DFE44CFBE /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */; };
+		C734A92C4765509FA07D47A9 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
+		0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		171715432159A48F006AE158 /* Alien Shooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alien Shooters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715462159A48F006AE158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		171715482159A48F006AE158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,14 +55,14 @@
 		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17B7B46B215AC3C6002D4ACF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = SOURCE_ROOT; };
 		17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
-		9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.release.xcconfig"; sourceTree = "<group>"; };
+		3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
+		43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
+		CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB00E5A2659F9CFEE95AFAC3 /* Pods_Alien_Shooters.framework in Frameworks */,
+				B04C2004CFADD14DFE44CFBE /* Pods_Alien_Shooters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D88178CFCDF9DF1D71F4436 /* Pods_Alien_ShootersTests.framework in Frameworks */,
+				C734A92C4765509FA07D47A9 /* Pods_Alien_ShootersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346484F78DB42E07CA5E0081 /* Pods_Alien_ShootersUITests.framework in Frameworks */,
+				4B5A2815C88DACABF12782F1 /* Pods_Alien_ShootersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D9F3203DFDAA1E26C30570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */,
+				CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */,
+				7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */,
+				3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */,
+				0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */,
+				88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1717153A2159A48F006AE158 = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +113,8 @@
 				1717155A2159A492006AE158 /* Alien ShootersTests */,
 				171715652159A492006AE158 /* Alien ShootersUITests */,
 				171715442159A48F006AE158 /* Products */,
-				41B557334CC80D4B7E6FC426 /* Pods */,
-				E8A4C2F9959887F333D5FAAA /* Frameworks */,
+				05D9F3203DFDAA1E26C30570 /* Pods */,
+				D4A6DAD1368442616682AF9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,25 +161,12 @@
 			path = "Alien ShootersUITests";
 			sourceTree = "<group>";
 		};
-		41B557334CC80D4B7E6FC426 /* Pods */ = {
+		D4A6DAD1368442616682AF9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */,
-				EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */,
-				C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */,
-				514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */,
-				BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */,
-				9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E8A4C2F9959887F333D5FAAA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				430AA394C7B5697FCA0E41C7 /* Pods_Alien_Shooters.framework */,
-				DEE20C79A0333A431353AF7E /* Pods_Alien_ShootersTests.framework */,
-				B51B9039337ED332707D19E0 /* Pods_Alien_ShootersUITests.framework */,
+				B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */,
+				43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */,
+				49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,11 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */;
 			buildPhases = (
-				7C2ECF0317B9FF3D17B20C0C /* [CP] Check Pods Manifest.lock */,
+				1327130142C505BA18E92568 /* [CP] Check Pods Manifest.lock */,
 				1717153F2159A48F006AE158 /* Sources */,
 				171715402159A48F006AE158 /* Frameworks */,
 				171715412159A48F006AE158 /* Resources */,
-				BD0FE06B780369261E05D0A3 /* [CP] Embed Pods Frameworks */,
+				0C7966113D08574FC393AEBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */;
 			buildPhases = (
-				A5334AE69B2AB5CD63414777 /* [CP] Check Pods Manifest.lock */,
+				70539C4E24D74157931AF10F /* [CP] Check Pods Manifest.lock */,
 				171715532159A492006AE158 /* Sources */,
 				171715542159A492006AE158 /* Frameworks */,
 				171715552159A492006AE158 /* Resources */,
@@ -216,7 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */;
 			buildPhases = (
-				0D2E636D5857C737F02741B7 /* [CP] Check Pods Manifest.lock */,
+				CC004F26247D7C1A757A96F6 /* [CP] Check Pods Manifest.lock */,
 				1717155E2159A492006AE158 /* Sources */,
 				1717155F2159A492006AE158 /* Frameworks */,
 				171715602159A492006AE158 /* Resources */,
@@ -303,25 +303,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D2E636D5857C737F02741B7 /* [CP] Check Pods Manifest.lock */ = {
+		0C7966113D08574FC393AEBB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Each/Each.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Alien ShootersUITests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Each.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C2ECF0317B9FF3D17B20C0C /* [CP] Check Pods Manifest.lock */ = {
+		1327130142C505BA18E92568 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +339,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5334AE69B2AB5CD63414777 /* [CP] Check Pods Manifest.lock */ = {
+		70539C4E24D74157931AF10F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,22 +357,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD0FE06B780369261E05D0A3 /* [CP] Embed Pods Frameworks */ = {
+		CC004F26247D7C1A757A96F6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Each/Each.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Each.framework",
+				"$(DERIVED_FILE_DIR)/Pods-Alien ShootersUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -557,18 +557,21 @@
 		};
 		1717156C2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F977C07C77376F7CFEBF7C4 /* Pods-Alien Shooters.debug.xcconfig */;
+			baseConfigurationReference = B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -576,18 +579,21 @@
 		};
 		1717156D2159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA08CD8EAB29B1C7AE76BAF2 /* Pods-Alien Shooters.release.xcconfig */;
+			baseConfigurationReference = CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBYQCX339P;
 				INFOPLIST_FILE = "Alien Shooters/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carlonamoca.Alien-Shooters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -595,7 +601,7 @@
 		};
 		1717156F2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3FB6429FEB47CB9D4F1E2A7 /* Pods-Alien ShootersTests.debug.xcconfig */;
+			baseConfigurationReference = 7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,7 +623,7 @@
 		};
 		171715702159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 514BF6E662C415A5F4D02A94 /* Pods-Alien ShootersTests.release.xcconfig */;
+			baseConfigurationReference = 3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -639,7 +645,7 @@
 		};
 		171715722159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD10A9BB4D4B1A23F756E513 /* Pods-Alien ShootersUITests.debug.xcconfig */;
+			baseConfigurationReference = 0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -660,7 +666,7 @@
 		};
 		171715732159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9633DC43E72D2CA174E368B9 /* Pods-Alien ShootersUITests.release.xcconfig */;
+			baseConfigurationReference = 88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
