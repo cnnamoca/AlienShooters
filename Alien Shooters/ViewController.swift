@@ -133,7 +133,6 @@ class ViewController: UIViewController {
             
             if self.countdown == 0 {
                 self.timerLabel.text = "You Lose!"
-                self.playButton.isEnabled = true
                 //TODO: - Check if this works
                 self.playButtonTrailingConstraint.constant += self.playButton.frame.size.width * 2
                 self.restartButtonTrailingConstraint.constant += self.restartButton.frame.size.width * 2
