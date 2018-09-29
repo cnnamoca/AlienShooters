@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     var timer = Each(1).seconds
     var countdown = 10
+    var currentPosition: SCNVector3?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +90,6 @@ class ViewController: UIViewController {
         
     }
     
-    //TODO: - Make enemies come towards user
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
@@ -106,6 +106,9 @@ class ViewController: UIViewController {
         alienNode!.constraints = [billboardConstraint]
         
         alienNode?.eulerAngles.x = 170
+        
+        //TODO: - Make enemies come towards user
+        
     }
     
     func animateNode(node: SCNNode) {
@@ -155,3 +158,7 @@ class ViewController: UIViewController {
 
 }
 
+// Modify the "+" operator
+func +(left: SCNVector3, right: SCNVector3) -> SCNVector3 {
+    return SCNVector3Make(left.x + right.x, left.y + right.y, left.z + right.z)
+}
