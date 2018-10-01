@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         enemyNode = alienNode!
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
-                                         randomNumbers(firstNum: -0.5, secondNum: 0.5))
+                                         randomNumbers(firstNum: -1, secondNum: 1))
 
         sceneView.scene.rootNode.addChildNode(alienNode!)
         
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
         billboardConstraint.freeAxes = SCNBillboardAxis.Y
         alienNode!.constraints = [billboardConstraint]
         
-        //TODO: - Make enemies come towards user
+        //TODO: - Make enemies move more
         
     }
     
@@ -120,6 +120,12 @@ class ViewController: UIViewController {
         spin.autoreverses = true
         spin.repeatCount = 5
         node.addAnimation(spin, forKey: "position")
+        
+        let shrink = CABasicAnimation(keyPath: "scale")
+        shrink.fromValue = SCNVector3(node.scale.x, node.scale.y, node.scale.z)
+        shrink.toValue = SCNVector3(0, 0, 0)
+        shrink.duration = 0.7
+        node.addAnimation(shrink, forKey: "scale")
     }
     
     //TODO: - Make enemies go closer to user/camera position
