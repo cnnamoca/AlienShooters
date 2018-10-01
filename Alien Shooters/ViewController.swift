@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import SceneKit
 import Each
 
 class ViewController: UIViewController {
@@ -128,8 +129,22 @@ class ViewController: UIViewController {
         node.addAnimation(shrink, forKey: "scale")
     }
     
-    //TODO: - Make enemies go closer to user/camera position
-    
+    func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        //print("did begin contact", contact.nodeA.physicsBody!.categoryBitMask, contact.nodeB.physicsBody!.categoryBitMask)
+        if contact.nodeA.physicsBody?.categoryBitMask == CollisionCategory.ship.rawValue || contact.nodeB.physicsBody?.categoryBitMask == CollisionCategory.ship.rawValue { // this conditional is not required--we've used the bit masks to ensure only one type of collision takes place--will be necessary as soon as more collisions are created/enabled
+            
+            print("Hit ship!")
+            self.removeNodeWithAnimation(contact.nodeB, explosion: false) // remove the bullet
+            self.userScore += 1
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { // remove/replace ship after half a second to visualize collision
+                self.removeNodeWithAnimation(contact.nodeA, explosion: true)
+                self.addNewShip()
+            })
+            
+        }
+    }
+        
     func setTimer() {
         timer.perform { () -> NextStep in
             self.countdown -= 1
@@ -160,6 +175,13 @@ class ViewController: UIViewController {
         return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
 
+}
+
+struct CollisionCategory: OptionSet {
+    let rawValue: Int
+    
+    static let bullets  = CollisionCategory(rawValue: 1 << 0) // 00...01
+    static let ship = CollisionCategory(rawValue: 1 << 1) // 00..10
 }
 
 // Modify the "+" operator

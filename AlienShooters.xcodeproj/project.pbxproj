@@ -17,6 +17,7 @@
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
 		17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B7B46B215AC3C6002D4ACF /* art.scnassets */; };
 		17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */; };
+		17CCB7642162A04E00967C39 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CCB7632162A04E00967C39 /* Bullet.swift */; };
 		40109FD49CD432CC53A6A389 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150DC31ED6C27F5993CB4E1E /* Pods_Alien_ShootersUITests.framework */; };
 		BEF42865E1CD3FEBE4546335 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70A82D01A9550DAEDEA4F5 /* Pods_Alien_ShootersTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		175B838C2162884600E1175D /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		17B7B46B215AC3C6002D4ACF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = SOURCE_ROOT; };
 		17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		17CCB7632162A04E00967C39 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		1DFFD9A68B752E5C344755B5 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EB8508EBA344A5394463870 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
 		576AAB1154FC053699E1CBB8 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				171715522159A491006AE158 /* Info.plist */,
 				171715462159A48F006AE158 /* AppDelegate.swift */,
 				171715482159A48F006AE158 /* ViewController.swift */,
+				17CCB7632162A04E00967C39 /* Bullet.swift */,
 				17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */,
 				1717154D2159A491006AE158 /* Assets.xcassets */,
 				1717154F2159A491006AE158 /* LaunchScreen.storyboard */,
@@ -387,6 +390,7 @@
 				17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */,
 				171715492159A48F006AE158 /* ViewController.swift in Sources */,
 				171715472159A48F006AE158 /* AppDelegate.swift in Sources */,
+				17CCB7642162A04E00967C39 /* Bullet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
