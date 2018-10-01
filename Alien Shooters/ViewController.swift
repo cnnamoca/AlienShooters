@@ -93,18 +93,17 @@ class ViewController: UIViewController {
     var enemyNode = SCNNode()
     func addEnemy() {
         let enemyScene = SCNScene(named: "art.scnassets/FlyingSaucer.scn")
-        let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
+        let alienNode = enemyScene?.rootNode.childNode(withName: "FlyingSaucer", recursively: false)
         enemyNode = alienNode!
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
-                                         1.5)
+                                         randomNumbers(firstNum: -0.5, secondNum: 0.5))
 
         sceneView.scene.rootNode.addChildNode(alienNode!)
         
         // TODO: - Make sure enemies are looking at player at all times
         let billboardConstraint = SCNBillboardConstraint()
         billboardConstraint.freeAxes = SCNBillboardAxis.Y
-//        billboardConstraint.freeAxes = SCNBillboardAxis.X
         alienNode!.constraints = [billboardConstraint]
         
         //TODO: - Make enemies come towards user
@@ -146,7 +145,6 @@ class ViewController: UIViewController {
     }
     
     func restoreTimer() {
-        timer.stop()
         countdown = 10
         self.timerLabel.text = String(countdown)
     }
