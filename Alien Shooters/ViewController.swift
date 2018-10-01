@@ -11,7 +11,7 @@ import ARKit
 import SceneKit
 import Each
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SCNPhysicsContactDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var playButton: UIButton!
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         sceneView.delegate = self
+        sceneView.scene.physicsWorld.contactDelegate = self
         sceneView.session.run(configuration)
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         
@@ -43,27 +44,36 @@ class ViewController: UIViewController {
     
     @objc
     func handleTap(sender: UITapGestureRecognizer) {
-        let sceneViewTappedOn = sender.view as! SCNView
-        let touchCoordinates = sender.location(in: sceneViewTappedOn)
-        let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
+//        let sceneViewTappedOn = sender.view as! SCNView
+//        let touchCoordinates = sender.location(in: sceneViewTappedOn)
+//        let hitTest = sceneViewTappedOn.hitTest(touchCoordinates)
+//
+//        //TODO: - Make sure only alien nodes are touched
+//        if hitTest.first?.node == enemyNode {
+//            if countdown > 0 {
+//                let results = hitTest.first!
+//                let node = results.node
+//                if node.animationKeys.isEmpty {
+//                    SCNTransaction.begin()
+//                    self.animateNode(node: node)
+//                    SCNTransaction.completionBlock = {
+//                        node.removeFromParentNode()
+//                        self.addEnemy()
+//                        self.restoreTimer()
+//                    }
+//                    SCNTransaction.commit()
+//                }
+//            }
+//        }
         
-        //TODO: - Make sure only alien nodes are touched
-        if hitTest.first?.node == enemyNode {
-            if countdown > 0 {
-                let results = hitTest.first!
-                let node = results.node
-                if node.animationKeys.isEmpty {
-                    SCNTransaction.begin()
-                    self.animateNode(node: node)
-                    SCNTransaction.completionBlock = {
-                        node.removeFromParentNode()
-                        self.addEnemy()
-                        self.restoreTimer()
-                    }
-                    SCNTransaction.commit()
-                }
-            }
-        }
+        let bulletsNode = Bullet()
+        
+        let (direction, position) = self.getUserVector()
+        bulletsNode.position = position // SceneKit/AR coordinates are in meters
+        
+        let bulletDirection = direction
+        bulletsNode.physicsBody?.applyForce(bulletDirection, asImpulse: true)
+        sceneView.scene.rootNode.addChildNode(bulletsNode)
     }
     
     //MARK: - IBActions
@@ -99,6 +109,13 @@ class ViewController: UIViewController {
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
                                          randomNumbers(firstNum: -0.5, secondNum: 0.5),
                                          randomNumbers(firstNum: -1, secondNum: 1))
+        
+        
+        let shape = SCNPhysicsShape(geometry: alienNode!.geometry!, options: nil)
+        alienNode?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: shape)
+        alienNode?.physicsBody?.isAffectedByGravity = false
+        alienNode?.physicsBody?.categoryBitMask = CollisionCategory.ship.rawValue
+        alienNode?.physicsBody?.contactTestBitMask = CollisionCategory.bullets.rawValue
 
         sceneView.scene.rootNode.addChildNode(alienNode!)
         
@@ -134,15 +151,37 @@ class ViewController: UIViewController {
         if contact.nodeA.physicsBody?.categoryBitMask == CollisionCategory.ship.rawValue || contact.nodeB.physicsBody?.categoryBitMask == CollisionCategory.ship.rawValue { // this conditional is not required--we've used the bit masks to ensure only one type of collision takes place--will be necessary as soon as more collisions are created/enabled
             
             print("Hit ship!")
-            self.removeNodeWithAnimation(contact.nodeB, explosion: false) // remove the bullet
-            self.userScore += 1
+            contact.nodeB.removeFromParentNode()
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { // remove/replace ship after half a second to visualize collision
-                self.removeNodeWithAnimation(contact.nodeA, explosion: true)
-                self.addNewShip()
-            })
+            DispatchQueue.main.async {
+                if self.countdown > 0 {
+                    let node = contact.nodeA
+                    if node.animationKeys.isEmpty {
+                        SCNTransaction.begin()
+                        self.animateNode(node: node)
+                        SCNTransaction.completionBlock = {
+                            node.removeFromParentNode()
+                            self.addEnemy()
+                            self.restoreTimer()
+                        }
+                        SCNTransaction.commit()
+                    }
+                }
+            }
+            
             
         }
+    }
+    
+    func getUserVector() -> (SCNVector3, SCNVector3) { // (direction, position)
+        if let frame = self.sceneView.session.currentFrame {
+            let mat = SCNMatrix4(frame.camera.transform) // 4x4 transform matrix describing camera in world space
+            let dir = SCNVector3(-1 * mat.m31, -1 * mat.m32, -1 * mat.m33) // orientation of camera in world space
+            let pos = SCNVector3(mat.m41, mat.m42, mat.m43) // location of camera in world space
+            
+            return (dir, pos)
+        }
+        return (SCNVector3(0, 0, -1), SCNVector3(0, 0, -0.2))
     }
         
     func setTimer() {
