@@ -81,7 +81,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restart(_ sender: Any) {
-        timer.stop()
         restoreTimer()
         playButton.isEnabled = true
         
@@ -93,7 +92,7 @@ class ViewController: UIViewController {
     
     var enemyNode = SCNNode()
     func addEnemy() {
-        let enemyScene = SCNScene(named: "art.scnassets/alien.scn")
+        let enemyScene = SCNScene(named: "art.scnassets/FlyingSaucer.scn")
         let alienNode = enemyScene?.rootNode.childNode(withName: "alien", recursively: false)
         enemyNode = alienNode!
         alienNode?.position = SCNVector3(randomNumbers(firstNum: -1, secondNum: 1),
@@ -130,7 +129,7 @@ class ViewController: UIViewController {
         timer.perform { () -> NextStep in
             self.countdown -= 1
             self.timerLabel.text = String(self.countdown)
-            
+
             if self.countdown == 0 {
                 self.timerLabel.text = "You Lose!"
                 //TODO: - Check if this works
@@ -141,12 +140,13 @@ class ViewController: UIViewController {
                 }, completion: nil)
                 return .stop
             }
-            
+
             return .continue
         }
     }
     
     func restoreTimer() {
+        timer.stop()
         countdown = 10
         self.timerLabel.text = String(countdown)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7A18E9D0BF31835E7C5B3B /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFC4D712C7E45145B512818 /* Pods_Alien_Shooters.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		171715472159A48F006AE158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715462159A48F006AE158 /* AppDelegate.swift */; };
 		171715492159A48F006AE158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715482159A48F006AE158 /* ViewController.swift */; };
 		1717154C2159A48F006AE158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1717154A2159A48F006AE158 /* Main.storyboard */; };
@@ -16,9 +17,8 @@
 		171715672159A492006AE158 /* Alien_ShootersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171715662159A492006AE158 /* Alien_ShootersUITests.swift */; };
 		17B7B46C215AC3C6002D4ACF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B7B46B215AC3C6002D4ACF /* art.scnassets */; };
 		17B7B46E215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */; };
-		4B5A2815C88DACABF12782F1 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */; };
-		B04C2004CFADD14DFE44CFBE /* Pods_Alien_Shooters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */; };
-		C734A92C4765509FA07D47A9 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */; };
+		40109FD49CD432CC53A6A389 /* Pods_Alien_ShootersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150DC31ED6C27F5993CB4E1E /* Pods_Alien_ShootersUITests.framework */; };
+		BEF42865E1CD3FEBE4546335 /* Pods_Alien_ShootersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70A82D01A9550DAEDEA4F5 /* Pods_Alien_ShootersTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,30 +39,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		171715432159A48F006AE158 /* Alien Shooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alien Shooters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02212AE34E94B86E061EA094 /* Pods-Alien ShootersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		150DC31ED6C27F5993CB4E1E /* Pods_Alien_ShootersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		171715432159A48F006AE158 /* AlienShooters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlienShooters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715462159A48F006AE158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		171715482159A48F006AE158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1717154B2159A48F006AE158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1717154D2159A491006AE158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		171715502159A491006AE158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171715522159A491006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		171715572159A492006AE158 /* Alien ShootersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171715572159A492006AE158 /* AlienShootersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlienShootersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1717155B2159A492006AE158 /* Alien_ShootersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersTests.swift; sourceTree = "<group>"; };
 		1717155D2159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		171715622159A492006AE158 /* Alien ShootersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien ShootersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171715622159A492006AE158 /* AlienShootersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlienShootersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		171715662159A492006AE158 /* Alien_ShootersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien_ShootersUITests.swift; sourceTree = "<group>"; };
 		171715682159A492006AE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175B838C2162884600E1175D /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		17B7B46B215AC3C6002D4ACF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = SOURCE_ROOT; };
 		17B7B46D215B2817002D4ACF /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
-		43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
-		CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.release.xcconfig"; sourceTree = "<group>"; };
+		1DFFD9A68B752E5C344755B5 /* Pods-Alien ShootersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersUITests/Pods-Alien ShootersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4EB8508EBA344A5394463870 /* Pods-Alien Shooters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.debug.xcconfig"; sourceTree = "<group>"; };
+		576AAB1154FC053699E1CBB8 /* Pods-Alien ShootersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F702ED4A5CC2ACACBE90BC9 /* Pods-Alien Shooters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien Shooters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters.release.xcconfig"; sourceTree = "<group>"; };
+		6BFC4D712C7E45145B512818 /* Pods_Alien_Shooters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_Shooters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B70A82D01A9550DAEDEA4F5 /* Pods_Alien_ShootersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alien_ShootersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3862707CFDDBF31E6653150 /* Pods-Alien ShootersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alien ShootersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alien ShootersTests/Pods-Alien ShootersTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04C2004CFADD14DFE44CFBE /* Pods_Alien_Shooters.framework in Frameworks */,
+				0F7A18E9D0BF31835E7C5B3B /* Pods_Alien_Shooters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C734A92C4765509FA07D47A9 /* Pods_Alien_ShootersTests.framework in Frameworks */,
+				BEF42865E1CD3FEBE4546335 /* Pods_Alien_ShootersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,24 +87,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5A2815C88DACABF12782F1 /* Pods_Alien_ShootersUITests.framework in Frameworks */,
+				40109FD49CD432CC53A6A389 /* Pods_Alien_ShootersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05D9F3203DFDAA1E26C30570 /* Pods */ = {
+		0FE22F95F93142A9D0277F62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */,
-				CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */,
-				7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */,
-				3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */,
-				0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */,
-				88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */,
+				175B838C2162884600E1175D /* ARKit.framework */,
+				6BFC4D712C7E45145B512818 /* Pods_Alien_Shooters.framework */,
+				7B70A82D01A9550DAEDEA4F5 /* Pods_Alien_ShootersTests.framework */,
+				150DC31ED6C27F5993CB4E1E /* Pods_Alien_ShootersUITests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1717153A2159A48F006AE158 = {
@@ -113,17 +112,17 @@
 				1717155A2159A492006AE158 /* Alien ShootersTests */,
 				171715652159A492006AE158 /* Alien ShootersUITests */,
 				171715442159A48F006AE158 /* Products */,
-				05D9F3203DFDAA1E26C30570 /* Pods */,
-				D4A6DAD1368442616682AF9D /* Frameworks */,
+				ABD27BA11F8258E1224DF014 /* Pods */,
+				0FE22F95F93142A9D0277F62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		171715442159A48F006AE158 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				171715432159A48F006AE158 /* Alien Shooters.app */,
-				171715572159A492006AE158 /* Alien ShootersTests.xctest */,
-				171715622159A492006AE158 /* Alien ShootersUITests.xctest */,
+				171715432159A48F006AE158 /* AlienShooters.app */,
+				171715572159A492006AE158 /* AlienShootersTests.xctest */,
+				171715622159A492006AE158 /* AlienShootersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,43 +160,46 @@
 			path = "Alien ShootersUITests";
 			sourceTree = "<group>";
 		};
-		D4A6DAD1368442616682AF9D /* Frameworks */ = {
+		ABD27BA11F8258E1224DF014 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1B786E7C2C0A86B43A74167 /* Pods_Alien_Shooters.framework */,
-				43B80D3631CEA92076F2C673 /* Pods_Alien_ShootersTests.framework */,
-				49DA900760DF55D6DBA52D25 /* Pods_Alien_ShootersUITests.framework */,
+				4EB8508EBA344A5394463870 /* Pods-Alien Shooters.debug.xcconfig */,
+				5F702ED4A5CC2ACACBE90BC9 /* Pods-Alien Shooters.release.xcconfig */,
+				B3862707CFDDBF31E6653150 /* Pods-Alien ShootersTests.debug.xcconfig */,
+				576AAB1154FC053699E1CBB8 /* Pods-Alien ShootersTests.release.xcconfig */,
+				02212AE34E94B86E061EA094 /* Pods-Alien ShootersUITests.debug.xcconfig */,
+				1DFFD9A68B752E5C344755B5 /* Pods-Alien ShootersUITests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		171715422159A48F006AE158 /* Alien Shooters */ = {
+		171715422159A48F006AE158 /* AlienShooters */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */;
+			buildConfigurationList = 1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShooters" */;
 			buildPhases = (
-				1327130142C505BA18E92568 /* [CP] Check Pods Manifest.lock */,
+				03B5A63B63FB53B94A6E845B /* [CP] Check Pods Manifest.lock */,
 				1717153F2159A48F006AE158 /* Sources */,
 				171715402159A48F006AE158 /* Frameworks */,
 				171715412159A48F006AE158 /* Resources */,
-				0C7966113D08574FC393AEBB /* [CP] Embed Pods Frameworks */,
+				01AD5E2BA00BD4CEFF8694FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Alien Shooters";
+			name = AlienShooters;
 			productName = "Alien Shooters";
-			productReference = 171715432159A48F006AE158 /* Alien Shooters.app */;
+			productReference = 171715432159A48F006AE158 /* AlienShooters.app */;
 			productType = "com.apple.product-type.application";
 		};
-		171715562159A492006AE158 /* Alien ShootersTests */ = {
+		171715562159A492006AE158 /* AlienShootersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */;
+			buildConfigurationList = 1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShootersTests" */;
 			buildPhases = (
-				70539C4E24D74157931AF10F /* [CP] Check Pods Manifest.lock */,
+				6939FCCD4DFC2B4871F22784 /* [CP] Check Pods Manifest.lock */,
 				171715532159A492006AE158 /* Sources */,
 				171715542159A492006AE158 /* Frameworks */,
 				171715552159A492006AE158 /* Resources */,
@@ -207,16 +209,16 @@
 			dependencies = (
 				171715592159A492006AE158 /* PBXTargetDependency */,
 			);
-			name = "Alien ShootersTests";
+			name = AlienShootersTests;
 			productName = "Alien ShootersTests";
-			productReference = 171715572159A492006AE158 /* Alien ShootersTests.xctest */;
+			productReference = 171715572159A492006AE158 /* AlienShootersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		171715612159A492006AE158 /* Alien ShootersUITests */ = {
+		171715612159A492006AE158 /* AlienShootersUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */;
+			buildConfigurationList = 171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShootersUITests" */;
 			buildPhases = (
-				CC004F26247D7C1A757A96F6 /* [CP] Check Pods Manifest.lock */,
+				B9A63A16000B5C0B30E9B071 /* [CP] Check Pods Manifest.lock */,
 				1717155E2159A492006AE158 /* Sources */,
 				1717155F2159A492006AE158 /* Frameworks */,
 				171715602159A492006AE158 /* Resources */,
@@ -226,9 +228,9 @@
 			dependencies = (
 				171715642159A492006AE158 /* PBXTargetDependency */,
 			);
-			name = "Alien ShootersUITests";
+			name = AlienShootersUITests;
 			productName = "Alien ShootersUITests";
-			productReference = 171715622159A492006AE158 /* Alien ShootersUITests.xctest */;
+			productReference = 171715622159A492006AE158 /* AlienShootersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1717153E2159A48F006AE158 /* Build configuration list for PBXProject "Alien Shooters" */;
+			buildConfigurationList = 1717153E2159A48F006AE158 /* Build configuration list for PBXProject "AlienShooters" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -267,9 +269,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				171715422159A48F006AE158 /* Alien Shooters */,
-				171715562159A492006AE158 /* Alien ShootersTests */,
-				171715612159A492006AE158 /* Alien ShootersUITests */,
+				171715422159A48F006AE158 /* AlienShooters */,
+				171715562159A492006AE158 /* AlienShootersTests */,
+				171715612159A492006AE158 /* AlienShootersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,7 +305,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C7966113D08574FC393AEBB /* [CP] Embed Pods Frameworks */ = {
+		01AD5E2BA00BD4CEFF8694FC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,7 +323,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alien Shooters/Pods-Alien Shooters-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1327130142C505BA18E92568 /* [CP] Check Pods Manifest.lock */ = {
+		03B5A63B63FB53B94A6E845B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +341,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70539C4E24D74157931AF10F /* [CP] Check Pods Manifest.lock */ = {
+		6939FCCD4DFC2B4871F22784 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,7 +359,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC004F26247D7C1A757A96F6 /* [CP] Check Pods Manifest.lock */ = {
+		B9A63A16000B5C0B30E9B071 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,12 +411,12 @@
 /* Begin PBXTargetDependency section */
 		171715592159A492006AE158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 171715422159A48F006AE158 /* Alien Shooters */;
+			target = 171715422159A48F006AE158 /* AlienShooters */;
 			targetProxy = 171715582159A492006AE158 /* PBXContainerItemProxy */;
 		};
 		171715642159A492006AE158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 171715422159A48F006AE158 /* Alien Shooters */;
+			target = 171715422159A48F006AE158 /* AlienShooters */;
 			targetProxy = 171715632159A492006AE158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,7 +559,7 @@
 		};
 		1717156C2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8D0DD2F490712D1E2A67602 /* Pods-Alien Shooters.debug.xcconfig */;
+			baseConfigurationReference = 4EB8508EBA344A5394463870 /* Pods-Alien Shooters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -579,7 +581,7 @@
 		};
 		1717156D2159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF9B0D95E1B0423E2F4B7B42 /* Pods-Alien Shooters.release.xcconfig */;
+			baseConfigurationReference = 5F702ED4A5CC2ACACBE90BC9 /* Pods-Alien Shooters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -601,7 +603,7 @@
 		};
 		1717156F2159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A2CA46882884992D9F71400 /* Pods-Alien ShootersTests.debug.xcconfig */;
+			baseConfigurationReference = B3862707CFDDBF31E6653150 /* Pods-Alien ShootersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,13 +619,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alien Shooters.app/Alien Shooters";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlienShooters.app/AlienShooters";
 			};
 			name = Debug;
 		};
 		171715702159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E78B0A9F5D62F403D094AA5 /* Pods-Alien ShootersTests.release.xcconfig */;
+			baseConfigurationReference = 576AAB1154FC053699E1CBB8 /* Pods-Alien ShootersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -639,13 +641,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alien Shooters.app/Alien Shooters";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlienShooters.app/AlienShooters";
 			};
 			name = Release;
 		};
 		171715722159A492006AE158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E8DE464023DAB3E86F10861 /* Pods-Alien ShootersUITests.debug.xcconfig */;
+			baseConfigurationReference = 02212AE34E94B86E061EA094 /* Pods-Alien ShootersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,7 +668,7 @@
 		};
 		171715732159A492006AE158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88E469ECB009F1C7E79F390F /* Pods-Alien ShootersUITests.release.xcconfig */;
+			baseConfigurationReference = 1DFFD9A68B752E5C344755B5 /* Pods-Alien ShootersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,7 +690,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1717153E2159A48F006AE158 /* Build configuration list for PBXProject "Alien Shooters" */ = {
+		1717153E2159A48F006AE158 /* Build configuration list for PBXProject "AlienShooters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				171715692159A492006AE158 /* Debug */,
@@ -697,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien Shooters" */ = {
+		1717156B2159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShooters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1717156C2159A492006AE158 /* Debug */,
@@ -706,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersTests" */ = {
+		1717156E2159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShootersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1717156F2159A492006AE158 /* Debug */,
@@ -715,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "Alien ShootersUITests" */ = {
+		171715712159A492006AE158 /* Build configuration list for PBXNativeTarget "AlienShootersUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				171715722159A492006AE158 /* Debug */,
